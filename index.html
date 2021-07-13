@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart-UI test</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- LOGIN MODAL -->
+    <div class="modal-login" id="modalLogin">
+        <form action="#" method="POST" class="modal-login__form">
+            <span class="close-login">&times;</span>
+            <div class="form__img"><img src="img/logo.png" alt="Logo"></div>
+            <div>LOG-IN</div>
+            <input type="email" value="Username or email" class="form__email">
+            <input type="password" value="Password" class="form__password">
+            <input type="submit" value="LOG IN" class="form__submit">
+            <div>DON'T HAVE A PASSWORD YET? <a href="#" id="signinLink">SIGN UP</a></div>
+        </form>
+    </div>
+
+    <!-- SIGNIN MODAL -->
+    <div class="modal-signin" id="modalSignin">
+        <form action="#" method="POST" class="modal-signin__form">
+            <span class="close-signin">&times;</span>
+            <div class="form__img"><img src="img/logo.png" alt="Logo"></div>
+            <div>SIGN-UP</div>
+            <input type="text" value="Username" class="form__username">
+            <input type="email" value="Email" class="form__email">
+            <input type="password" value="Password" class="form__password">
+            <input type="submit" value="SIGN UP" class="form__submit">
+            <div>IF YOU ALREADY HAVE AN ACCOUNT <a href="#" id="loginLink">LOG IN</a></div>
+        </form>
+    </div>
+
+    <header>
+        <div class="wrapper">
+            <div class="navbar">
+                <a href="/index.html" class="navbar__img"><img src="img/logo.png" alt="Logo"></a>
+                <div class="navbar-right">
+                    <nav id="navbar__burger-list">
+                        <ul>
+                            <li><a href="#">Menu Link 1</a></li>
+                            <li><a href="#">Menu Link 2</a></li>
+                            <li><a href="#">Menu Link 3</a></li>
+                            <li><a href="#">Menu Link 4</a></li>
+                            <li><a href="#">Menu Link 5</a></li>
+                        </ul>
+                    </nav>
+                    <input type="button" value="LOG IN" id="modalLogin-btn">
+                    <input type="button" value="SIGN UP" id="modalSignin-btn">
+                    <div id="navbar__burger-btn"><span></span></div>
+                </div>
+            </div>
+            <div class="header__body">
+                <span>Find your Favorite</span> 
+                <h1>RECIPES</h1>
+                <a href="#">GET STARTED</a>
+                <p>OR SEND US YOUR OWN RECIPES AND <a href="#"> GET REWARDED!</a></p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="section-1">
+            <div class="wrapper">
+                <div class="section-1__cards">
+                    <div class="cards__card">
+                        <div class="card__img"><img src="img/section-1-icon-1.webp" alt="Burger"></div>
+                        <h4>GET INSPIRED</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisc Pellentesque vel enim a elit viverra elementuma. Aliquam erat volutpat.</p>
+                    </div>
+                    <div class="cards__card">
+                        <div class="card__img"><img src="img/section-1-icon-2.webp" alt="Burger"></div>
+                        <h4>GET REWARDED</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisc Pellentesque vel enim a elit viverra elementuma. Aliquam erat volutpat.</p>
+                    </div>
+                    <div class="cards__card">
+                        <div class="card__img"><img src="img/section-1-icon-3.webp" alt="Burger"></div>
+                        <h4>GET LOCAL</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisc Pellentesque vel enim a elit viverra elementuma. Aliquam erat volutpat.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="app">
+            <div class="wrapper">
+                <div class="app__body">
+                    <div class="app__img"><img src="img/app_icon_1.png" alt="Phone"></div>
+                    <div class="app__text">
+                        <h4>INTRODUCING THE FUDI APP</h4>
+                        <p>Morbi eget posuere dolor. Pellentesque cursus aliquet aliquet. Aeneanet felis sit amet diam mollis ullamcorper. Nullam consequat sem a ante vest ibulum tristique. Suspendisse tristique lacus ac mattis porta.</p>
+                        <p>Vivamus ligula quam, vehicula non lacinia sed, faucibus sit amet libero. In libero dui, eleifend eu nisi id, egestas fringilla odio. In varius quam a massa hendrerit ullamcorper a eu justo. Suspendisse porta mattis convallis. Aenean tempus ligula ac odio rhoncus, quis aliquam dolor accumsan.</p>
+                        <p>Suspendisse aliquet felis consectetur libero congue, sed pulvinar diam malesuada. Duis vehicula a nibh id hendrerit. Donec sit amet ultrices ante, a mattis massa.</p>
+                        <a href="#"><img src="img/app_icon_2.webp" alt="Apple Store"></a>
+                        <a href="#"><img src="img/app_icon_3.webp" alt="Google Play"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="testimonials">
+            <div class="wrapper">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="swiper-slide__img"><img src="img/testimonials_icon.webp" alt="User"></div>
+                            <q>I am so happy because I found this recipe, and it just made my life easier. Thanks  so much for sharing!</q>
+                            <p>- Michael Dawson, San Francisco, CA -</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-slide__img"><img src="img/testimonials_icon.webp" alt="User"></div>
+                            <q>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat eum nesciunt corrupti aperiam. Earum illum, eius ad tempora quidem veritatis, quasi, officia harum quibusdam eum nostrum voluptatem ipsum. Dicta, inventore.</q>
+                            <p>- Michael Dawson, San Francisco, CA -</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-slide__img"><img src="img/testimonials_icon.webp" alt="User"></div>
+                            <q>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid, laborum. Odio corporis mollitia tempora earum quo quaerat at ex pariatur?</q>
+                            <p>- Michael Dawson, San Francisco, CA -</p>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+        <div class="restaurants">
+            <h4>BROWSE BY CUISINES</h4>
+            <div class="restaurants__menu">
+                <div class="restaurants__row">
+                    <div class="restaurants__col">
+                        <div class="col__card">
+                            <div class="card__img"><img src="img/restaurants_icon_1.png" alt="Restaurant"></div>
+                            <div class="card__info">
+                                <p><span></span> Recipes</p>
+                                <h3></h3>
+                            </div>
+                        </div>
+                        <div class="col__card">
+                            <div class="card__img"><img src="img/restaurants_icon_2.png" alt="Restaurant"></div>
+                            <div class="card__info">
+                                <p><span></span> Recipes</p>
+                                <h3></h3>
+                            </div>
+                        </div>
+                        <div class="col__card">
+                            <div class="card__img"><img src="img/restaurants_icon_3.png" alt="Restaurant"></div>
+                            <div class="card__info">
+                                <p><span></span> Recipes</p>
+                                <h3></h3>
+                            </div>
+                        </div>
+                        <div class="col__card">
+                            <div class="card__img"><img src="img/restaurants_icon_4.png" alt="Restaurant"></div>
+                            <div class="card__info">
+                                <p><span></span> Recipes</p>
+                                <h3></h3>
+                            </div>
+                        </div>
+                        <div class="col__card">
+                            <div class="card__img"><img src="img/restaurants_icon_5.png" alt="Restaurant"></div>
+                            <div class="card__info">
+                                <p><span></span> Recipes</p>
+                                <h3></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="restaurants__row">
+                    <div class="restaurants__col">
+                        <div class="col__card">
+                            <div class="card__img"><img src="img/restaurants_icon_6.png" alt="Restaurant"></div>
+                            <div class="card__info">
+                                <p><span></span> Recipes</p>
+                                <h3></h3>
+                            </div>
+                        </div>
+                        <div class="col__card">
+                            <div class="card__img"><img src="img/restaurants_icon_7.png" alt="Restaurant"></div>
+                            <div class="card__info">
+                                <p><span></span> Recipes</p>
+                                <h3></h3>
+                            </div>
+                        </div>
+                        <div class="col__card">
+                            <div class="card__img"><img src="img/restaurants_icon_8.png" alt="Restaurant"></div>
+                            <div class="card__info">
+                                <p><span></span> Recipes</p>
+                                <h3></h3>
+                            </div>
+                        </div>
+                        <div class="col__card">
+                            <div class="card__img"><img src="img/restaurants_icon_9.png" alt="Restaurant"></div>
+                            <div class="card__info">
+                                <p><span></span> Recipes</p>
+                                <h3></h3>
+                            </div>
+                        </div>
+                        <div class="col__card">
+                            <div class="card__img"><img src="img/restaurants_icon_10.png" alt="Restaurant"></div>
+                            <div class="card__info">
+                                <p><span></span> Recipes</p>
+                                <h3></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="anim-counter">
+            <div class="wrapper">
+                <div class="anim-counter__counters">
+                    <div class="counters__counter">
+                        <div class="counter__quant" data-target="23567">0</div>
+                        <div class="counter__text">Recipes Available</div>
+                    </div>
+                    <div class="counters__counter">
+                        <div class="counter__quant" data-target="431729">0</div>
+                        <div class="counter__text">Active Users</div>
+                    </div>
+                    <div class="counters__counter">
+                        <div class="counter__quant" data-target="892173">0</div>
+                        <div class="counter__text">Positive Reviews</div>
+                    </div>
+                    <div class="counters__counter">
+                        <div class="counter__quant" data-target="56581">0</div>
+                        <div class="counter__text">Photos & Videos</div>
+                    </div>
+                    <div class="counters__counter">
+                        <div class="counter__quant" data-target="3182">0</div>
+                        <div class="counter__text">Spices and Herbs</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="wrapper">
+            <div class="footer-body">
+                <p>©2014 Fudi. All Rights Reserved.</p>
+                <p>DESIGN BY: <span>WWW.BEKADES.COM</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> <!-- SWIPER SLIDER -->
+    <script src="js/js.js"></script>
+</body>
+</html>
